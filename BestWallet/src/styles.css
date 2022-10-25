@@ -1,0 +1,28 @@
+body{
+    background-image: url("assets/imgs/fondo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    background-color:rgb(6, 40, 61);
+    color: rgb(71, 181, 255); 
+} 
+header.fondo{
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+    padding-right: 2rem;
+    text-align: right;
+    color: #fff;
+}
+/* nav.navbar{
+    background-color:rgb(6, 40, 61);
+    color: rgb(71, 181, 255);
+} */
+footer.footer{
+    background-color:rgb(6, 40, 61);
+    color: rgb(71, 181, 255);
+} 
+
+/* #services{
+    color: black;
+}  */
