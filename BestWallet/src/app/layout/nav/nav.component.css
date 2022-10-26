@@ -1,7 +1,6 @@
 .navbar{
     background-color:rgb(6, 40, 61);
     --bs-navbar-color: rgb(71, 181, 255);
-
 }
 .navbar-brand{
     color: rgb(71, 181, 255);
