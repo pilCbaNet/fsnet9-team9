@@ -8,7 +8,9 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { MovimientosComponent } from './pages/movimientos/movimientos.component';
+import { RegistroComponent } from './pages/registro/registro.component';
 import {HttpClientModule} from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import {HttpClientModule} from '@angular/common/http';
     FooterComponent,
     HeaderComponent,
     LandingComponent,
-    MovimientosComponent
+    MovimientosComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,

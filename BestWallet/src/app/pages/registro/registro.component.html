@@ -1,3 +1,73 @@
-<p>
-  registro works!
-</p>
+<div class="container">
+  <div class="row">
+      <div class="col-md-12 registro-form-header">
+          <p class="registro-form-font-header">Crear cuenta <span> nueva</span><p>
+      </div>
+  </div>
+  <div class="row m-3">
+      <div class="col-md-12 registro-form">
+          <form    class="form"  >
+              <div class="m-3">
+                  <label for="nombre" class="form-label" ></label>
+                  <input type="text"  id="nombre"  class="form-control" placeholder="Nombre" >
+                  <div>
+                      <p  class="text-danger">
+                      El nombre es requerido.
+                      </p>
+                  </div>
+                  
+              </div>
+              <div class="m-3">
+                  <label for="apellido" class="form-label"></label>
+                  <input type="text"  id="apellido"   class="form-control" formControlName="apellido" placeholder="Apellido">
+                  <div>
+                      <p  class="text-danger">
+                      El apellido es requerido.
+                      </p>
+                  </div>
+              </div>
+              <div class="m-3">
+                  <label for="email" class="form-label"></label>
+                  <input type="email" id="email"  class="form-control" formControlName="email"  placeholder="Correo Electrónico">
+                  <div >
+                      <p >
+                      El email es requerido.
+                      </p>
+                  </div>
+              </div>
+              <div class="m-3">
+                  <label for="password1" class="form-label"></label>
+                  <input type="password" id="password1"  class="form-control" formControlName="password1" placeholder="Contraseña">
+                  <div>
+                      <p  class="text-danger">
+                      El password es requerido.
+                      </p>
+                  </div>
+              </div>
+              <div class="m-3">
+                  <label for="password2" class="form-label"></label>
+                  <input type="password" id="password2"  class="form-control" formControlName="password2" placeholder="Reingrese la Contraseña">
+                  <div>
+                      <p>
+                      El password es requerido.
+                      </p>
+                  </div>
+              </div>
+              <div class="m-3" >
+                  <div class="login">
+                      <p>  ¿Ya tienes una cuenta? <a href="#">Inicia Sesion</a></p>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault"> 
+                  He leído y acepto los <a href="#">Términos  y condiciones</a>
+                      </label>
+                  </div>
+                  </div>
+              <div class="m-3">
+                  <button class="btn btn-primary mt-3" >Enviar</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
