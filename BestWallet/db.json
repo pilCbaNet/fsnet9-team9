@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "movimientos" : [
+    {
+      "id": 1,
+      "fecha": "2022-10-28 18:31:20",
+      "tipo" : "deposito",
+      "monto": "+ 1500 ARS"
+    },
+    {
+      "id": 2,
+      "fecha": "2022-10-26 09:07:10",
+      "tipo" : "retiro",
+      "monto": "- 1000 ARS"
+    },
+    {
+      "id": 3,
+      "fecha": "2018-12-09 19:02:03",
+      "tipo" : "deposito",
+      "monto": "+ 3000 ARS"
+    }
+  ]
+}

@@ -16,23 +16,11 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>22/10/2022</td>
-                <td>deposito</td>
-                <td>$1500</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>21/10/2022</td>
-                <td>retiro</td>
-                <td>$1000</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>18/10/2022</td>
-                <td>deposito</td>
-                <td>$ 3000</td>
+            <tr *ngFor="let item of movimientos">
+                <th scope="row">{{item.id}}</th>
+                <td>{{item.fecha}}</td>
+                <td>{{item.tipo}}</td>
+                <td>{{item.monto}}</td>
             </tr>
         </tbody>
     </table>
