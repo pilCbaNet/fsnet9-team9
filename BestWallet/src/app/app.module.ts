@@ -10,6 +10,7 @@ import { LandingComponent } from './pages/landing/landing.component';
 import { MovimientosComponent } from './pages/movimientos/movimientos.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import {HttpClientModule} from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

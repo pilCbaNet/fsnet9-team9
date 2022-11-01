@@ -4,6 +4,14 @@
       "id": 1,
       "title": "json-server",
       "author": "typicode"
+    },
+    {
+      "nombre": "maria",
+      "apellido": "carmen",
+      "email": "ejemplo1@gmail.com",
+      "password1": "password1",
+      "password2": "password1",
+      "id": 2
     }
   ],
   "comments": [
@@ -16,23 +24,23 @@
   "profile": {
     "name": "typicode"
   },
-  "movimientos" : [
+  "movimientos": [
     {
       "id": 1,
       "fecha": "2022-10-28 18:31:20",
-      "tipo" : "deposito",
+      "tipo": "deposito",
       "monto": "+ 1500 ARS"
     },
     {
       "id": 2,
       "fecha": "2022-10-26 09:07:10",
-      "tipo" : "retiro",
+      "tipo": "retiro",
       "monto": "- 1000 ARS"
     },
     {
       "id": 3,
       "fecha": "2018-12-09 19:02:03",
-      "tipo" : "deposito",
+      "tipo": "deposito",
       "monto": "+ 3000 ARS"
     }
   ]
