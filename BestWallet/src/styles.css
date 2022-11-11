@@ -1,12 +1,12 @@
 body{
-    background-image: url("assets/imgs/fondo.jpg");
+    background-image: url("assets/imgs/img.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
     background-color:rgb(6, 40, 61);
-    color: rgb(71, 181, 255); 
-} 
+    color: rgb(208, 221, 230);
+}
 header.fondo{
     padding-top: 8rem;
     padding-bottom: 6rem;
@@ -21,12 +21,12 @@ header.fondo{
 footer.footer{
     background-color:rgb(6, 40, 61);
     color: rgb(71, 181, 255);
-} 
+}
 
 .ng-valid:not(form), .ng-valid.required  {
     border-left: 5px solid #42A948; /* green */
   }
-  
+
   .ng-invalid:not(form)  {
     border-left: 5px solid #a94442; /* red */
   }
