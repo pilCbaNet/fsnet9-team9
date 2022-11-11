@@ -1,0 +1,17 @@
+.container{
+    height: 100vh;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+    padding-right: 2rem;
+}
+#page-top1{
+  background-color:rgba(215, 215, 221, 0.3);
+  border-radius: 3rem 3rem 3rem 3rem;
+}
+#page-top2 {
+  background-color:rgba(56, 56, 65, 0.4);
+  border-radius: 3rem 3rem 3rem 3rem;
+}
+
+
+
