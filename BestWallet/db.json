@@ -24,6 +24,16 @@
   "profile": {
     "name": "typicode"
   },
+  "usuarios": [
+    {
+      "nombre": "lautaro",
+      "apellido": "mascherano",
+      "email": "correoejemplo@gmail.com",
+      "password1": "password1",
+      "password2": "password2",
+      "id": 1
+    }
+  ],
   "movimientos": [
     {
       "id": 1,

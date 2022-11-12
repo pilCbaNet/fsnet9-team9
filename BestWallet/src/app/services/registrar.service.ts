@@ -12,6 +12,6 @@ export class RegistrarService {
 
   crearRegistro(registro:Register):Observable<any>
     {
-      return this.http.post('http://localhost:3000/posts',registro);
+      return this.http.post('http://localhost:3000/usuarios',registro);
     }
 }
