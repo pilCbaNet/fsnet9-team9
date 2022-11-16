@@ -1,0 +1,62 @@
+.container{
+    margin-top: 2cm;
+    font-family: 'Roboto', sans-serif;
+    height: 120vh;
+}
+
+.balance{
+    text-align: end;
+}
+.col{
+    margin-top: 2ex;
+}
+
+.containerOwnApp	{
+	box-shadow: 0 0 27px 0 rgba(84, 84, 84, 0.62);
+	padding-top: 15px;
+}
+
+.registro-page {
+  padding: 18% 0 0;
+  margin: 0 auto 20px;
+  max-width: 360px;
+  position: relative;
+}
+
+.registro-form {
+	box-shadow: 0 0 27px 0 rgba(84, 84, 84, 0.62);
+	width: 40%;
+	margin-left: 30%;
+}
+
+.registro-form-header{
+	padding-top: 16px;
+}
+
+.registro-from-row {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+.registro-form-font-header {
+	font-size:40px; 
+	font-weight: bold;
+    color: rgb(255, 178, 0);
+}
+
+
+p  {
+	text-align: center;
+    
+	
+}
+a{
+	color: rgb(255, 178, 0);
+}
+
+button{
+	color: black;
+	background-color: rgb(255, 178, 0);
+	border-color: rgb(255, 178, 0);
+	
+}

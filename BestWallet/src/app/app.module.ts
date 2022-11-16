@@ -14,6 +14,8 @@ import { RegistroComponent } from './pages/registro/registro.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoguearseComponent } from './pages/loguearse/loguearse.component';
+import { DepositoComponent } from './pages/deposito/deposito.component';
+import { RetiroComponent } from './pages/retiro/retiro.component';
 
 const Routes: Routes = [
   { path: 'loguearse', component: LoguearseComponent },
@@ -30,6 +32,8 @@ const Routes: Routes = [
     MovimientosComponent,
     RegistroComponent,
     LoguearseComponent,
+    DepositoComponent,
+    RetiroComponent,
 
   ],
   imports: [
