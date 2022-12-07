@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using API_BestWallet.Models;
 using API_BestWallet.Resultados.Usuarios;
 using API_BestWallet.Comandos.Usuarios;
 using Microsoft.EntityFrameworkCore;
+using Entities;
 
 namespace API_BestWallet.Controllers;
 

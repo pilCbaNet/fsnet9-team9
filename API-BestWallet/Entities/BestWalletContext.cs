@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace API_BestWallet.Models;
+namespace Entities;
 
 public partial class BestWalletContext : DbContext
 {

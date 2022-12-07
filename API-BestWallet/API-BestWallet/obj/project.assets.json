@@ -1006,6 +1006,19 @@
             "rid": "win"
           }
         }
+      },
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.11"
+        },
+        "compile": {
+          "bin/placeholder/Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entities.dll": {}
+        }
       }
     }
   },
@@ -3451,10 +3464,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Entities/1.0.0": {
+      "type": "project",
+      "path": "../Entities/Entities.csproj",
+      "msbuildProject": "../Entities/Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Entities >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.0",
@@ -3462,19 +3481,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrador\\.nuget\\packages\\": {}
+    "C:\\Users\\Candelaria\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrador\\Desktop\\API-BestWallet\\API-BestWallet\\API-BestWallet.csproj",
+      "projectUniqueName": "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\API-BestWallet\\API-BestWallet\\API-BestWallet.csproj",
       "projectName": "API-BestWallet",
-      "projectPath": "C:\\Users\\Administrador\\Desktop\\API-BestWallet\\API-BestWallet\\API-BestWallet.csproj",
-      "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrador\\Desktop\\API-BestWallet\\API-BestWallet\\obj\\",
+      "projectPath": "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\API-BestWallet\\API-BestWallet\\API-BestWallet.csproj",
+      "packagesPath": "C:\\Users\\Candelaria\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\API-BestWallet\\API-BestWallet\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Candelaria\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3487,7 +3506,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\API-BestWallet\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\API-BestWallet\\Entities\\Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -3537,7 +3560,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace API_BestWallet.Models;
+namespace Entities;
 
 public partial class Transaccion
 {
