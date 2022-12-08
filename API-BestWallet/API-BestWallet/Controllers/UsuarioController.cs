@@ -3,6 +3,7 @@ using API_BestWallet.Resultados.Usuarios;
 using API_BestWallet.Comandos.Usuarios;
 using Microsoft.EntityFrameworkCore;
 using Entities;
+using API_BestWallet.Services;
 
 namespace API_BestWallet.Controllers;
 
@@ -11,9 +12,11 @@ namespace API_BestWallet.Controllers;
 public class UsuarioController : ControllerBase
 {
     private readonly BestWalletContext _context;
-    public UsuarioController(BestWalletContext context)
+    private readonly IUsuarioService _service;
+    public UsuarioController(BestWalletContext context, IUsuarioService service)
     {
         _context = context;
+        _service = service;
     }
 
     [HttpPost]
@@ -45,4 +48,15 @@ public class UsuarioController : ControllerBase
             return BadRequest("Error al obtener el usuario");
         }
     }
+
+    [HttpPost]
+    [Route("API-BestWallet/usuario/registrar")]
+    public async Task<ActionResult<ResultadoLogin>> RegistrarUsuario([FromBody] ComandoRegistrar comando)
+    {
+        return await _service.RegistrarUsuario(comando);
+
+
+    }
+
 }
+

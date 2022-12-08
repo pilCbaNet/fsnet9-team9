@@ -1,0 +1,12 @@
+C:\Users\facu6\OneDrive\Documentos\GitHub\fsnet9-team9\API-BestWallet\Negocio\bin\Debug\net6.0\Negocio.deps.json
+C:\Users\facu6\OneDrive\Documentos\GitHub\fsnet9-team9\API-BestWallet\Negocio\bin\Debug\net6.0\Negocio.dll
+C:\Users\facu6\OneDrive\Documentos\GitHub\fsnet9-team9\API-BestWallet\Negocio\bin\Debug\net6.0\Negocio.pdb
+C:\Users\facu6\OneDrive\Documentos\GitHub\fsnet9-team9\API-BestWallet\Negocio\obj\Debug\net6.0\Negocio.csproj.AssemblyReference.cache
+C:\Users\facu6\OneDrive\Documentos\GitHub\fsnet9-team9\API-BestWallet\Negocio\obj\Debug\net6.0\Negocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\facu6\OneDrive\Documentos\GitHub\fsnet9-team9\API-BestWallet\Negocio\obj\Debug\net6.0\Negocio.AssemblyInfoInputs.cache
+C:\Users\facu6\OneDrive\Documentos\GitHub\fsnet9-team9\API-BestWallet\Negocio\obj\Debug\net6.0\Negocio.AssemblyInfo.cs
+C:\Users\facu6\OneDrive\Documentos\GitHub\fsnet9-team9\API-BestWallet\Negocio\obj\Debug\net6.0\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\facu6\OneDrive\Documentos\GitHub\fsnet9-team9\API-BestWallet\Negocio\obj\Debug\net6.0\Negocio.dll
+C:\Users\facu6\OneDrive\Documentos\GitHub\fsnet9-team9\API-BestWallet\Negocio\obj\Debug\net6.0\refint\Negocio.dll
+C:\Users\facu6\OneDrive\Documentos\GitHub\fsnet9-team9\API-BestWallet\Negocio\obj\Debug\net6.0\Negocio.pdb
+C:\Users\facu6\OneDrive\Documentos\GitHub\fsnet9-team9\API-BestWallet\Negocio\obj\Debug\net6.0\ref\Negocio.dll

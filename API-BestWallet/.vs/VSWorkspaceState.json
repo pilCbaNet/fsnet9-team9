@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\API-BestWallet",
+    "\\API-BestWallet\\bin",
+    "\\API-BestWallet\\bin\\Debug",
+    "\\API-BestWallet\\bin\\Debug\\net6.0",
+    "\\API-BestWallet\\Controllers",
+    "\\Entities",
+    "\\Entities\\obj",
+    "\\Negocio"
+  ],
+  "SelectedNode": "\\API-BestWallet\\Controllers\\UsuarioController.cs",
+  "PreviewInSolutionExplorer": false
+}

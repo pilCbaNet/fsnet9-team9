@@ -1,4 +1,6 @@
-using API_BestWallet.Models;
+//using API_BestWallet.Models;
+using API_BestWallet.Services;
+using Entities;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,9 +12,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddEntityFrameworkSqlServer().
-AddDbContext<BestWalletContext>(options => 
-options.UseSqlServer(builder.Configuration.GetConnectionString("ConexionDatabase")));
+//builder.Services.AddEntityFrameworkSqlServer().
+//AddDbContext<BestWalletContext>(options => 
+//options.UseSqlServer(builder.Configuration.GetConnectionString("ConexionDatabase")));
+builder.Services.AddDbContext<BestWalletContext>(opt =>
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("ConexionDatabase")));
+
+builder.Services.AddTransient<IUsuarioService, UsuarioService>();
 
 var app = builder.Build();
 

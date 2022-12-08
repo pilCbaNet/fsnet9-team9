@@ -27,8 +27,8 @@ public partial class BestWalletContext : DbContext
 
     public virtual DbSet<Usuario> Usuarios { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Data Source=WENDER;Initial Catalog=BestWallet;Integrated Security=true;Encrypt=False");
+    //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    //    => optionsBuilder.UseSqlServer("Data Source=localhost\\SQLEXPRESS;Initial Catalog=BestWallet;Integrated Security=true;Encrypt=False");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
