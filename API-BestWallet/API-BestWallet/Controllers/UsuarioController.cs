@@ -4,11 +4,13 @@ using API_BestWallet.Comandos.Usuarios;
 using Microsoft.EntityFrameworkCore;
 using Entities;
 using API_BestWallet.Services;
+using Microsoft.AspNetCore.Cors;
 
 namespace API_BestWallet.Controllers;
 
 [ApiController]
 [Route("[controller]")]
+[EnableCors("BestWallet")]
 public class UsuarioController : ControllerBase
 {
     private readonly BestWalletContext _context;
@@ -53,6 +55,7 @@ public class UsuarioController : ControllerBase
     [Route("API-BestWallet/usuario/registrar")]
     public async Task<ActionResult<ResultadoLogin>> RegistrarUsuario([FromBody] ComandoRegistrar comando)
     {
+        
         return await _service.RegistrarUsuario(comando);
 
 
