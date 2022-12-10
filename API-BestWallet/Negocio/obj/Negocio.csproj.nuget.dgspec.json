@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\facu6\\OneDrive\\Documentos\\GitHub\\fsnet9-team9\\API-BestWallet\\Negocio\\Negocio.csproj": {}
+    "C:\\Users\\Lauma\\OneDrive\\Documentos\\PIL 2022\\BilleteraVirtual\\Proyecto PIL2022\\fsnet9-team9\\API-BestWallet\\Negocio\\Negocio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\facu6\\OneDrive\\Documentos\\GitHub\\fsnet9-team9\\API-BestWallet\\Negocio\\Negocio.csproj": {
+    "C:\\Users\\Lauma\\OneDrive\\Documentos\\PIL 2022\\BilleteraVirtual\\Proyecto PIL2022\\fsnet9-team9\\API-BestWallet\\Negocio\\Negocio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\facu6\\OneDrive\\Documentos\\GitHub\\fsnet9-team9\\API-BestWallet\\Negocio\\Negocio.csproj",
+        "projectUniqueName": "C:\\Users\\Lauma\\OneDrive\\Documentos\\PIL 2022\\BilleteraVirtual\\Proyecto PIL2022\\fsnet9-team9\\API-BestWallet\\Negocio\\Negocio.csproj",
         "projectName": "Negocio",
-        "projectPath": "C:\\Users\\facu6\\OneDrive\\Documentos\\GitHub\\fsnet9-team9\\API-BestWallet\\Negocio\\Negocio.csproj",
-        "packagesPath": "C:\\Users\\facu6\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\facu6\\OneDrive\\Documentos\\GitHub\\fsnet9-team9\\API-BestWallet\\Negocio\\obj\\",
+        "projectPath": "C:\\Users\\Lauma\\OneDrive\\Documentos\\PIL 2022\\BilleteraVirtual\\Proyecto PIL2022\\fsnet9-team9\\API-BestWallet\\Negocio\\Negocio.csproj",
+        "packagesPath": "C:\\Users\\Lauma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lauma\\OneDrive\\Documentos\\PIL 2022\\BilleteraVirtual\\Proyecto PIL2022\\fsnet9-team9\\API-BestWallet\\Negocio\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\facu6\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lauma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
