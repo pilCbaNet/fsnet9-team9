@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "70129ae1-f2b4-4b02-a119-90a01980404d",
+		"name": "API BestWallet",
+		"description": "API que se encarga del manejo de informacion de la base de datos de la billetera virtual BestWallet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12380763"
+	},
+	"item": [
+		{
+			"name": "Obtener movimientos de la cuenta por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7208/movimientos/cuenta?idCuenta=3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7208",
+					"path": [
+						"movimientos",
+						"cuenta"
+					],
+					"query": [
+						{
+							"key": "idCuenta",
+							"value": "3"
+						}
+					]
+				},
+				"description": "Metodo que se encarga de listar todos los movimientos para la cuenta con id ingresado por Query Params"
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar operacion - retiro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"fecha\": \"2022-12-11T04:51:47.338Z\",\r\n  \"monto\": 80,\r\n  \"idCuenta\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7208/agregarTransaccion/retiro/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7208",
+					"path": [
+						"agregarTransaccion",
+						"retiro",
+						"2"
+					]
+				},
+				"description": "Metodo que se encarga de registrar una operacion de retiro de dinero de una cuenta en particular"
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar operacion - deposito",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"fecha\": \"2022-12-11T04:54:02.978Z\",\r\n  \"monto\": 50,\r\n  \"idCuenta\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7208/agregarTransaccion/deposito/3'",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7208",
+					"path": [
+						"agregarTransaccion",
+						"deposito",
+						"3'"
+					]
+				},
+				"description": "StartFragment\n\nMetodo que se encarga de registrar una operacion de deposito de dinero de una cuenta en particular\n\nEndFragment"
+			},
+			"response": []
+		},
+		{
+			"name": "Usuario Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"candelaria@gmail.com\",\r\n  \"password\": \"15560262\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7208/api/Usuario/API-BestWallet/usuario/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7208",
+					"path": [
+						"api",
+						"Usuario",
+						"API-BestWallet",
+						"usuario",
+						"login"
+					]
+				},
+				"description": "Metodo que se encarga de verificar y realizar el Login de un usuario"
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"luciano\",\r\n  \"apellido\": \"brugnoni\",\r\n  \"email\": \"luciano2@gmail.com\",\r\n  \"password\": \"15560262\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7208/api/Usuario/API-BestWallet/usuario/registrar",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7208",
+					"path": [
+						"api",
+						"Usuario",
+						"API-BestWallet",
+						"usuario",
+						"registrar"
+					]
+				},
+				"description": "Metodo que se encarga de registrar un nuevo usuario en la base de datos."
+			},
+			"response": []
+		}
+	]
+}
