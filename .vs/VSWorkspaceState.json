@@ -3,7 +3,11 @@
     "",
     "\\API-BestWallet",
     "\\API-BestWallet\\API-BestWallet",
-    "\\API-BestWallet\\API-BestWallet\\Controllers"
+    "\\API-BestWallet\\API-BestWallet\\Controllers",
+    "\\API-BestWallet\\API-BestWallet\\Resultados",
+    "\\CryptoAPI2",
+    "\\CryptoAPI2\\Entities"
   ],
+  "SelectedNode": "\\CryptoAPI2\\Entities\\BestWalletContext.cs",
   "PreviewInSolutionExplorer": false
 }

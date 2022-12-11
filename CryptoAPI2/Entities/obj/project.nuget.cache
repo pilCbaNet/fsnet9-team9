@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A5ru7B8cO3+zR7qTlPw7SnmI7J74/RA3yFSWF8zg+D8IbzEmgtNrsB6Fp31zJQ8cJYMhUIHFiVD/IbHT44EkNw==",
+  "dgSpecHash": "MpgKbHNGNpJkQ+WCsk+W2xjgBT1bBo6ohKs2J6Ce20YJkoi6tDQYQVDbrQiF2XTX90GyBO2A4FivaeLj2HlAgg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Candelaria\\Desktop\\CryptoAPI2\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\CryptoAPI2\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Candelaria\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Candelaria\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

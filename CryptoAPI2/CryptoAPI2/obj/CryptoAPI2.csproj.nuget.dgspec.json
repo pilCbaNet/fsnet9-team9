@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Candelaria\\Desktop\\CryptoAPI2\\CryptoAPI2\\CryptoAPI2.csproj": {}
+    "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\CryptoAPI2\\CryptoAPI2\\CryptoAPI2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Candelaria\\Desktop\\CryptoAPI2\\CryptoAPI2\\CryptoAPI2.csproj": {
+    "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\CryptoAPI2\\CryptoAPI2\\CryptoAPI2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Candelaria\\Desktop\\CryptoAPI2\\CryptoAPI2\\CryptoAPI2.csproj",
+        "projectUniqueName": "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\CryptoAPI2\\CryptoAPI2\\CryptoAPI2.csproj",
         "projectName": "CryptoAPI2",
-        "projectPath": "C:\\Users\\Candelaria\\Desktop\\CryptoAPI2\\CryptoAPI2\\CryptoAPI2.csproj",
+        "projectPath": "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\CryptoAPI2\\CryptoAPI2\\CryptoAPI2.csproj",
         "packagesPath": "C:\\Users\\Candelaria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Candelaria\\Desktop\\CryptoAPI2\\CryptoAPI2\\obj\\",
+        "outputPath": "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\CryptoAPI2\\CryptoAPI2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Candelaria\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Candelaria\\Desktop\\CryptoAPI2\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Candelaria\\Desktop\\CryptoAPI2\\Entities\\Entities.csproj"
+              "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\CryptoAPI2\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\CryptoAPI2\\Entities\\Entities.csproj"
               }
             }
           }
@@ -81,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\Candelaria\\Desktop\\CryptoAPI2\\Entities\\Entities.csproj": {
+    "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\CryptoAPI2\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Candelaria\\Desktop\\CryptoAPI2\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\CryptoAPI2\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\Candelaria\\Desktop\\CryptoAPI2\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\CryptoAPI2\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\Candelaria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Candelaria\\Desktop\\CryptoAPI2\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\CryptoAPI2\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Candelaria\\AppData\\Roaming\\NuGet\\NuGet.Config",
