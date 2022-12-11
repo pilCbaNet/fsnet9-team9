@@ -8,19 +8,24 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Candelaria\\.nuget\\packages\\": {}
+    "C:\\Users\\Lauma\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\API-BestWallet\\Negocio\\Negocio.csproj",
+      "projectUniqueName": "C:\\Users\\Lauma\\OneDrive\\Documentos\\PIL 2022\\BilleteraVirtual\\Proyecto PIL2022\\fsnet9-team9\\API-BestWallet\\Negocio\\Negocio.csproj",
       "projectName": "Negocio",
-      "projectPath": "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\API-BestWallet\\Negocio\\Negocio.csproj",
-      "packagesPath": "C:\\Users\\Candelaria\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\API-BestWallet\\Negocio\\obj\\",
+      "projectPath": "C:\\Users\\Lauma\\OneDrive\\Documentos\\PIL 2022\\BilleteraVirtual\\Proyecto PIL2022\\fsnet9-team9\\API-BestWallet\\Negocio\\Negocio.csproj",
+      "packagesPath": "C:\\Users\\Lauma\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lauma\\OneDrive\\Documentos\\PIL 2022\\BilleteraVirtual\\Proyecto PIL2022\\fsnet9-team9\\API-BestWallet\\Negocio\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Candelaria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lauma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -51,7 +56,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -60,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
