@@ -7,11 +7,12 @@ import { Register } from '../models/registro/registro';
   providedIn: 'root'
 })
 export class RegistrarService {
+  url: string = "https://localhost:7208/api/Usuario/API-BestWallet/usuario/registrar"
 
   constructor(private http:HttpClient) { }
 
   crearRegistro(registro:Register):Observable<any>
     {
-      return this.http.post('http://localhost:3000/usuarios',registro);
+      return this.http.post<any>(this.url, registro);
     }
 }

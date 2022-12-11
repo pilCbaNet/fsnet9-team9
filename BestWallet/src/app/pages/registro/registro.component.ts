@@ -16,29 +16,35 @@ export class RegistroComponent implements OnInit {
     this.form = this.formBuilder.group({
       nombre:['',[Validators.required]],
       apellido:['',[Validators.required]],
+      dni:['',[Validators.required]],
+      telefono:['',[Validators.required]],
+      fechaNacimiento:['',[Validators.required]],
       email:['',[Validators.required,Validators.email]],
-      password1:['',[Validators.required]],
-      password2:['',[Validators.required]],
+      password:['',[Validators.required]]
    })
   }
 
-  get nombre(){
+  get Nombre(){
     return this.form.get("nombre");
   }
-  get apellido(){
+  get Apellido(){
     return this.form.get("apellido");
   }
-  get email(){
+  get DNI(){
+    return this.form.get("dni");
+  }
+  get Telefono(){
+    return this.form.get("telefono");
+  }
+  get FechaNacimiento(){
+    return this.form.get("fechaNacimiento");
+  }
+  get Email(){
     return this.form.get("email");
   }
-  get password1(){
+  get Password(){
     return this.form.get("password");
   }
-  get password2(){
-    return this.form.get("password");
-  }
-
-
 
   ngOnInit() {
   }
@@ -46,16 +52,29 @@ export class RegistroComponent implements OnInit {
   register() {
     if (this.form.valid)
     {
-      let nombre:string = this.form.get('nombre')?.value;
-      let apellido:string = this.form.get('apellido')?.value;
-      let email:string = this.form.get('email')?.value;
-      let password1:string = this.form.get('password1')?.value;
-      let password2:string = this.form.get('password2')?.value;
+      let Nombre:string = this.form.get('nombre')?.value;
+      let Apellido:string = this.form.get('apellido')?.value;
+      let Dni:string = this.form.get('dni')?.value;
+      let Teléfono: string = this.form.get('telefono')?.value;
+      let FechaNac : Date = this.form.get('fechaNacimiento')?.value;
+      let Email:string = this.form.get('email')?.value;
+      let Password:string = this.form.get('password1')?.value;
 
-      let register:Register = new Register(nombre,apellido,email,password1,password2);
+      let register:Register = new Register(Nombre,Apellido,Dni,Teléfono,FechaNac,Email,Password);
       
-      this.myService.crearRegistro(register).subscribe(data=>{
-        this.router.navigate(['movimientos']);
+      this.myService.crearRegistro(register).subscribe({
+        next:(data) =>{
+          console.log(data);
+          if (data!= null)
+          {
+            this.router.navigate(['movimientos']);
+          }
+          else
+          {
+            alert("Ups.verifique su identidad")
+          }
+        },
+        error:(e) =>{alert("ups, error inesperado")}
       })
       this.form.reset
     }

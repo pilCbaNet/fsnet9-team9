@@ -46,6 +46,9 @@ namespace Entities.Services
 
                 Nombre = datos.Nombre,
                 Apellido = datos.Apellido,
+                Dni = datos.Dni,
+                Teléfono = datos.Teléfono,
+                FechaNac = datos.FechaNac,
                 Email = datos.Email,
                 Password = datos.Password,
             };

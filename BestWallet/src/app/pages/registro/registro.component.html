@@ -1,5 +1,3 @@
-
-
 <div class="container">
     <div class="row">
         <div class="col-md-12 registro-form-header">
@@ -13,8 +11,8 @@
                 <div class="m-3">
                     <label for="nombre" class="form-label"></label>
                     <input type="text" formControlName="nombre" id="nombre" class="form-control" placeholder="Nombre">
-                    <div *ngIf="nombre?.invalid && (nombre?.dirty || nombre?.touched)" class="alert">
-                        <div *ngIf="nombre?.errors?.['required']">
+                    <div *ngIf="Nombre?.invalid && (Nombre?.dirty || Nombre?.touched)" class="alert">
+                        <div *ngIf="Nombre?.errors?.['required']">
                             Name is required.
                         </div>
                     </div>
@@ -23,10 +21,46 @@
                     <label for="apellido" class="form-label"></label>
                     <input type="text" formControlName="apellido" id="apellido" class="form-control"
                         formControlName="apellido" placeholder="Apellido">
-                    <div *ngIf="apellido?.invalid && (apellido?.dirty || apellido?.touched)" class="alert">
-                        <div *ngIf="apellido?.errors?.['required']">
+                    <div *ngIf="Apellido?.invalid && (Apellido?.dirty || Apellido?.touched)" class="alert">
+                        <div *ngIf="Apellido?.errors?.['required']">
                             <p class="text-danger">
                                 El apellido es requerido.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-3">
+                    <label for="DNI" class="form-label"></label>
+                    <input type="dni" formControlName="dni" id="dni" class="form-control" placeholder="DNI">
+                    <div *ngIf="DNI?.invalid && (DNI?.dirty || DNI?.touched)" class="alert">
+                        <div *ngIf="DNI?.errors?.['required']">
+                            <p class="text-danger">
+                                El DNI es requerido.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-3">
+                    <label for="Telefono" class="form-label"></label>
+                    <input type="Telefono" formControlName="telefono" id="Telefono" class="form-control"
+                        placeholder="Teléfono">
+                    <div *ngIf="Telefono?.invalid && (Telefono?.dirty || Telefono?.touched)" class="alert">
+                        <div *ngIf="Telefono?.errors?.['required']">
+                            <p class="text-danger">
+                                El Teléfono es requerido.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-3">
+                    <label for="FechaNacimiento" class="form-label"></label>
+                    <input type="FechaNacimiento" formControlName="fechaNacimiento" id="FechaNacimiento"
+                        class="form-control" placeholder="Fecha de Nacimiento">
+                    <div *ngIf="FechaNacimiento?.invalid && (FechaNacimiento?.dirty || FechaNacimiento?.touched)"
+                        class="alert">
+                        <div *ngIf="FechaNacimiento?.errors?.['required']">
+                            <p class="text-danger">
+                                La Fecha de Nacimiento es requerida.
                             </p>
                         </div>
                     </div>
@@ -35,13 +69,13 @@
                     <label for="email" class="form-label"></label>
                     <input type="email" formControlName="email" id="email" class="form-control" formControlName="email"
                         placeholder="Correo Electrónico">
-                    <div *ngIf="email?.invalid && (email?.dirty || email?.touched)" class="alert">
-                        <div *ngIf="email?.errors?.['required']">
+                    <div *ngIf="Email?.invalid && (Email?.dirty || Email?.touched)" class="alert">
+                        <div *ngIf="Email?.errors?.['required']">
                             <p class="text-danger">
                                 El email es requerido.
                             </p>
                         </div>
-                        <div *ngIf="email?.errors?.['email']">
+                        <div *ngIf="Email?.errors?.['email']">
                             <p class="text-danger">
                                 El formato de email no es válido.
                             </p>
@@ -49,33 +83,16 @@
                     </div>
                 </div>
                 <div class="m-3">
-                    <label for="password1" class="form-label"></label>
-                    <input type="password" formControlName="password1" id="password1" class="form-control"
-                        formControlName="password1" placeholder="Contraseña">
-                    <div *ngIf="password1?.invalid && (password1?.dirty || password1?.touched)" class="alert">
-                        <div *ngIf="password1?.errors?.['required']">
+                    <label for="password" class="form-label"></label>
+                    <input type="password" formControlName="password" id="password" class="form-control"
+                        placeholder="Contraseña">
+                    <div *ngIf="Password?.invalid && (Password?.dirty || Password?.touched)" class="alert">
+                        <div *ngIf="Password?.errors?.['required']">
                             <p class="text-danger">
                                 La contraseña es requerida.
                             </p>
                         </div>
-                        <div *ngIf="password1?.errors?.['pattern']">
-                            <p class="text-danger">
-                                La contraseña no es válida.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="m-3">
-                    <label for="password2" class="form-label"></label>
-                    <input type="password" formControlName="password2" id="password2" class="form-control"
-                        formControlName="password2" placeholder="Reingrese la Contraseña">
-                    <div *ngIf="password2?.invalid && (password2?.dirty || password2?.touched)" class="alert">
-                        <div *ngIf="password2?.errors?.['required']">
-                            <p class="text-danger">
-                                La contraseña es requerida.
-                            </p>
-                        </div>
-                        <div *ngIf="password2?.errors?.['pattern']">
+                        <div *ngIf="Password?.errors?.['pattern']">
                             <p class="text-danger">
                                 La contraseña no es válida.
                             </p>

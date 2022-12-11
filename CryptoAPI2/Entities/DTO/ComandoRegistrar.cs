@@ -12,6 +12,12 @@ namespace Entities.DTO
 
         public string Apellido { get; set; } = null!;
 
+        public int Dni { get; set; }
+
+        public long Teléfono { get; set; } 
+
+        public DateTime FechaNac { get; set; }
+
         public string Email { get; set; } = null!;
 
         public string Password { get; set; } = null!;

@@ -4,7 +4,19 @@ using CryptoAPI2.Models;
 using Entities.Services;
 using System.Text.Json.Serialization;
 
+var myAllowSpecifcOrigins = "_myAllowSpecifcOrigins";
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: myAllowSpecifcOrigins, policy =>
+    {
+        policy.WithOrigins("http://localhost:4200");
+        policy.AllowAnyMethod();
+        policy.AllowAnyHeader();
+    });
+});
 
 // Add services to the container.
 
@@ -30,7 +42,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors("BestWallet");
+app.UseCors(myAllowSpecifcOrigins);
 
 app.UseHttpsRedirection();
 
