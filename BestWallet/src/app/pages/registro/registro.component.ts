@@ -10,10 +10,10 @@ import { RegistrarService } from 'src/app/services/registrar.service';
   styleUrls: ['./registro.component.css']
 })
 export class RegistroComponent implements OnInit {
-  form! : FormGroup;
+  formR! : FormGroup;
   
   constructor(private formBuilder:FormBuilder, private myService:RegistrarService, private router:Router) {
-    this.form = this.formBuilder.group({
+    this.formR = formBuilder.group({
       nombre:['',[Validators.required]],
       apellido:['',[Validators.required]],
       dni:['',[Validators.required]],
@@ -24,44 +24,44 @@ export class RegistroComponent implements OnInit {
    })
   }
 
-  get Nombre(){
-    return this.form.get("nombre");
+  get nombre(){
+    return this.formR.get("nombre");
   }
-  get Apellido(){
-    return this.form.get("apellido");
+  get apellido(){
+    return this.formR.get("apellido");
   }
-  get DNI(){
-    return this.form.get("dni");
+  get dni(){
+    return this.formR.get("dni");
   }
-  get Telefono(){
-    return this.form.get("telefono");
+  get telefono(){
+    return this.formR.get("telefono");
   }
-  get FechaNacimiento(){
-    return this.form.get("fechaNacimiento");
+  get fechaNacimiento(){
+    return this.formR.get("fechaNacimiento");
   }
-  get Email(){
-    return this.form.get("email");
+  get email(){
+    return this.formR.get("email");
   }
-  get Password(){
-    return this.form.get("password");
+  get password(){
+    return this.formR.get("password");
   }
 
   ngOnInit() {
   }
 
   register() {
-    if (this.form.valid)
+    if (this.formR.valid)
     {
-      let Nombre:string = this.form.get('nombre')?.value;
-      let Apellido:string = this.form.get('apellido')?.value;
-      let Dni:string = this.form.get('dni')?.value;
-      let Teléfono: string = this.form.get('telefono')?.value;
-      let FechaNac : Date = this.form.get('fechaNacimiento')?.value;
-      let Email:string = this.form.get('email')?.value;
-      let Password:string = this.form.get('password1')?.value;
+      let nombre:string = this.formR.get('nombre')?.value;
+      let apellido:string = this.formR.get('apellido')?.value;
+      let dni:number = this.formR.get('dni')?.value;
+      let telefono: number = this.formR.get('telefono')?.value;
+      let fechaNacimiento : Date = this.formR.get('fechaNacimiento')?.value;
+      let email:string = this.formR.get('email')?.value;
+      let password:string = this.formR.get('password')?.value;
 
-      let register:Register = new Register(Nombre,Apellido,Dni,Teléfono,FechaNac,Email,Password);
-      
+      let register:Register = new Register(nombre,apellido,dni,telefono,fechaNacimiento,email,password);
+      console.log("servicio corriendo");
       this.myService.crearRegistro(register).subscribe({
         next:(data) =>{
           console.log(data);
@@ -76,10 +76,10 @@ export class RegistroComponent implements OnInit {
         },
         error:(e) =>{alert("ups, error inesperado")}
       })
-      this.form.reset
+      //this.formR.reset
     }
     else{
-      this.form.markAllAsTouched();
+      //this.formR.markAllAsTouched();
     }
   }
 }
