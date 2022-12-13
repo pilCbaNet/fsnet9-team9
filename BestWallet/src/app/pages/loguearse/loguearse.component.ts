@@ -39,9 +39,10 @@ export class LoguearseComponent implements OnInit {
       this.myService.iniciarSesion(login).subscribe({
         next:(data) =>{
           console.log(data);
-          if (data!= null)
+          if (data!= null && data.password == login.Password)
           {
             this.router.navigate(['movimientos']);
+            console.log(data);
           }
           else
           {

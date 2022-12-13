@@ -60,6 +60,7 @@ export class RegistroComponent implements OnInit {
       let email:string = this.formR.get('email')?.value;
       let password:string = this.formR.get('password')?.value;
 
+
       let register:Register = new Register(nombre,apellido,dni,telefono,fechaNacimiento,email,password);
       console.log("servicio corriendo");
       this.myService.crearRegistro(register).subscribe({
@@ -67,6 +68,7 @@ export class RegistroComponent implements OnInit {
           console.log(data);
           if (data!= null)
           {
+            console.log(data);
             this.router.navigate(['movimientos']);
           }
           else

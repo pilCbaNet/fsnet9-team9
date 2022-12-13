@@ -13,6 +13,7 @@ export class RegistrarService {
 
   crearRegistro(registro:Register):Observable<any>
     {
+      console.log(JSON.stringify({registro}));
       return this.http.post<any>(this.url, registro);
     }
 }

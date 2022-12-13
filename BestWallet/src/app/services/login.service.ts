@@ -8,7 +8,7 @@ import { Login } from '../models/login';
   providedIn: 'root'
 })
 export class LoginService {
-  url: string="https://localhost:7208/api/Usuario/API-BestWallet/usuario/login"
+  url: string="https://localhost:7208/api/Usuario/API-BestWallet/usuario/login";
 
   loggedIn = new BehaviorSubject<boolean>(false);
   currentUserSubject: BehaviorSubject<Login>;
@@ -22,7 +22,7 @@ export class LoginService {
   iniciarSesion(login:Login):Observable<any>{
     return this.http.post<any>(this.url,login)
     .pipe(tap(data => {
-      sessionStorage.setItem('currentUser', JSON.stringify(data ));
+      sessionStorage.setItem('currentUser',data);
       this.currentUserSubject.next(data);
       this.loggedIn.next(true);
       return data;
