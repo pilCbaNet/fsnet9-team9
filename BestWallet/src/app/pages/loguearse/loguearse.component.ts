@@ -39,13 +39,14 @@ export class LoguearseComponent implements OnInit {
       this.myService.iniciarSesion(login).subscribe({
         next:(data) =>{
           console.log(data);
-          if (data!= null)
+          if (data.ok)
           {
             this.router.navigate(['movimientos']);
+            console.log(data);
           }
           else
           {
-            alert("Ups.verifique su identidad")
+            alert(data.error)
           }
         },
         error:(e) =>{alert("ups, error inesperado")}

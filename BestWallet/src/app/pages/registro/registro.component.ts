@@ -10,57 +10,78 @@ import { RegistrarService } from 'src/app/services/registrar.service';
   styleUrls: ['./registro.component.css']
 })
 export class RegistroComponent implements OnInit {
-  form! : FormGroup;
+  formR! : FormGroup;
   
   constructor(private formBuilder:FormBuilder, private myService:RegistrarService, private router:Router) {
-    this.form = this.formBuilder.group({
+    this.formR = formBuilder.group({
       nombre:['',[Validators.required]],
       apellido:['',[Validators.required]],
+      dni:['',[Validators.required]],
+      telefono:['',[Validators.required]],
+      fechaNacimiento:['',[Validators.required]],
       email:['',[Validators.required,Validators.email]],
-      password1:['',[Validators.required]],
-      password2:['',[Validators.required]],
+      password:['',[Validators.required]]
    })
   }
 
   get nombre(){
-    return this.form.get("nombre");
+    return this.formR.get("nombre");
   }
   get apellido(){
-    return this.form.get("apellido");
+    return this.formR.get("apellido");
+  }
+  get dni(){
+    return this.formR.get("dni");
+  }
+  get telefono(){
+    return this.formR.get("telefono");
+  }
+  get fechaNacimiento(){
+    return this.formR.get("fechaNacimiento");
   }
   get email(){
-    return this.form.get("email");
+    return this.formR.get("email");
   }
-  get password1(){
-    return this.form.get("password");
+  get password(){
+    return this.formR.get("password");
   }
-  get password2(){
-    return this.form.get("password");
-  }
-
-
 
   ngOnInit() {
   }
 
   register() {
-    if (this.form.valid)
+    if (this.formR.valid)
     {
-      let nombre:string = this.form.get('nombre')?.value;
-      let apellido:string = this.form.get('apellido')?.value;
-      let email:string = this.form.get('email')?.value;
-      let password1:string = this.form.get('password1')?.value;
-      let password2:string = this.form.get('password2')?.value;
+      let nombre:string = this.formR.get('nombre')?.value;
+      let apellido:string = this.formR.get('apellido')?.value;
+      let dni:number = this.formR.get('dni')?.value;
+      let telefono: number = this.formR.get('telefono')?.value;
+      let fechaNacimiento : Date = this.formR.get('fechaNacimiento')?.value;
+      let email:string = this.formR.get('email')?.value;
+      let password:string = this.formR.get('password')?.value;
 
-      let register:Register = new Register(nombre,apellido,email,password1,password2);
-      
-      this.myService.crearRegistro(register).subscribe(data=>{
-        this.router.navigate(['movimientos']);
+
+      let register:Register = new Register(nombre,apellido,dni,telefono,fechaNacimiento,email,password);
+      console.log("servicio corriendo");
+      this.myService.crearRegistro(register).subscribe({
+        next:(data) =>{
+          console.log(data);
+          if (data!= null)
+          {
+            console.log(data);
+            this.router.navigate(['movimientos']);
+          }
+          else
+          {
+            alert("Ups.verifique su identidad")
+          }
+        },
+        error:(e) =>{alert("ups, error inesperado")}
       })
-      this.form.reset
+      //this.formR.reset
     }
     else{
-      this.form.markAllAsTouched();
+      //this.formR.markAllAsTouched();
     }
   }
 }

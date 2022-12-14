@@ -5,6 +5,7 @@ import { MovimientosComponent } from './pages/movimientos/movimientos.component'
 import { RegistroComponent } from './pages/registro/registro.component';
 import { DepositoComponent } from './pages/deposito/deposito.component';
 import { RetiroComponent } from './pages/retiro/retiro.component';
+import { LoguearseComponent } from './pages/loguearse/loguearse.component';
 
 const routes: Routes = [
   {path: 'home', component: LandingComponent },

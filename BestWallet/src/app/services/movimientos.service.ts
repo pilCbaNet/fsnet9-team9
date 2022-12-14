@@ -6,13 +6,14 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class MovimientosService {
-
+  url: string="https://localhost:7208/movimientos/cuenta?idCuenta="
   constructor(private http: HttpClient) { 
     console.log("El servicio movimientos esta corriendo")
   }
 
   obtenerMovimientos():Observable<any>
   {
-    return this.http.get('http://localhost:3000/movimientos');
+    let idCta = 4;
+    return this.http.get(this.url + idCta);
   }
 }

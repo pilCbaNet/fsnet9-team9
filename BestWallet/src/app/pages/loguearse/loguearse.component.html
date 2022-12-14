@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <div class="mb-4 lead text-center">
-                        <label for="email">Contraseña</label>
+                        <label for="password">Contraseña</label>
                         <input type="password" class="form-control" formControlName="password" name="password">
                         <div *ngIf="password?.invalid && (password?.dirty || password?.touched)" class="alert">
                             <div *ngIf="password?.errors?.['required']">

@@ -5,7 +5,7 @@
 
                 <h3 class="text-white">Balance Total</h3>
                 <p class="balance text-white my-4 fs-1">
-                    <strong>3000</strong> $Ars
+                    <strong>{{saldo}}</strong> $Ars
                 </p>
                 <div class="col">
                     <a routerLink="/deposito"><button type="button" class="btn btn-primary">Depositar</button></a>
@@ -23,7 +23,8 @@
         </div>
     </div>
     <p id="Ultimos-movimientos-subtitle"></p>
-    <table class="table table-hover" id="tabla-movimientos">
+
+    <table class="table table-hover bg-white" id="tabla-movimientos">
         <thead>
             <tr>
                 <th scope="col">#</th>
@@ -34,14 +35,14 @@
         </thead>
         <tbody>
             <tr *ngFor="let item of movimientos">
-                <th scope="row">{{item.id}}</th>
+                <th scope="row">{{item.idTransaccion}}</th>
                 <td>{{item.fecha}}</td>
-                <td>{{item.tipo}}</td>
+                <td>{{item.idTipoTransaccion}}</td>
                 <td>{{item.monto}}</td>
             </tr>
         </tbody>
     </table>
+
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
