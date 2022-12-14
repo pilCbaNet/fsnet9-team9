@@ -21,6 +21,8 @@ builder.Services.AddTransient<IUsuarioService, UsuarioService>();
 //ignoramos los ciclos
 builder.Services.AddControllers().AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
+builder.Services.AddCors();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -30,7 +32,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors("BestWallet");
+//app.UseCors("BestWallet");
+
+app.UseCors(c =>
+{
+    c.AllowAnyMethod();
+    c.AllowAnyHeader();
+    c.AllowAnyOrigin();
+
+});
 
 app.UseHttpsRedirection();
 

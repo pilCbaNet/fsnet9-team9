@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace Entities.Resultados
 {
-    public class ResultadoOperaciones
+    public class ResultadoOperaciones : ResultadoBase
     {
+        public int IdTipoTransaccion { get; set; }
+        public double Monto { get; set; }
         public int IdCuenta { get; set; }
-        public virtual ICollection<Transaccione> Transacciones { get; set; }
     }
 }

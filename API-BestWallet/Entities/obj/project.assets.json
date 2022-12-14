@@ -1771,19 +1771,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Candelaria\\.nuget\\packages\\": {}
+    "C:\\Users\\Administrador\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\API-BestWallet\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\Administrador\\Documents\\GitHub\\fsnet9-team9\\API-BestWallet\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\API-BestWallet\\Entities\\Entities.csproj",
-      "packagesPath": "C:\\Users\\Candelaria\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Candelaria\\Desktop\\PIL\\fsnet9-team9\\API-BestWallet\\Entities\\obj\\",
+      "projectPath": "C:\\Users\\Administrador\\Documents\\GitHub\\fsnet9-team9\\API-BestWallet\\Entities\\Entities.csproj",
+      "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Administrador\\Documents\\GitHub\\fsnet9-team9\\API-BestWallet\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Candelaria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1833,7 +1833,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

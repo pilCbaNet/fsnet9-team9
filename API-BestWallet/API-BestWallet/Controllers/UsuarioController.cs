@@ -53,11 +53,48 @@ public class UsuarioController : ControllerBase
 
     [HttpPost]
     [Route("API-BestWallet/usuario/registrar")]
-    public async Task<ActionResult<ResultadoLogin>> RegistrarUsuario([FromBody] ComandoRegistrar comando)
+    public async Task<ActionResult<Usuario>> RegistrarUsuario([FromBody] ComandoRegistrar comando)
     {
         
-        return await _service.RegistrarUsuario(comando);
+        //return await _service.RegistrarUsuario(comando);
 
+        try
+        {
+            
+
+            var result = new ResultadoRegistro();
+
+            var usuario = new Usuario();
+
+            usuario.Nombre = comando.Nombre;
+            usuario.Apellido = comando.Apellido;
+            usuario.Email = comando.Email;
+            usuario.Password = comando.Password;
+            
+
+            if (usuario.Nombre == "" || usuario.Apellido == "" || usuario.Email == "" || usuario.Password == "")
+            {
+                result.SetError("Error al registrar usuario");
+                result.StatusCode = 500;
+                return Ok(result);
+            }
+            else
+            {
+                await _context.AddAsync(usuario);
+                await _context.SaveChangesAsync();
+
+                result.Nombre = usuario.Nombre;
+                result.Apellido = usuario.Apellido;
+                result.Email = usuario.Email;
+                result.Password = usuario.Password;
+                result.StatusCode = 200;
+                return Ok(result);
+            }
+        }
+        catch (Exception ex)
+        {
+            return BadRequest("Error al registrar usuario");
+        }
 
     }
 

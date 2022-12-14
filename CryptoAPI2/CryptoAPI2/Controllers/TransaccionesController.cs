@@ -33,49 +33,82 @@ namespace CryptoAPI2.Controllers
 
         //POST agregar retiro
         [HttpPost]
-        [Route("/agregarTransaccion/retiro/{IdTipo}")]
-        public async Task<ActionResult> PostRetiro([FromBody] TransaccionesDTO transaccionesDTO, int IdTipo = 2)
+        [Route("/agregarTransaccion/retiro")]
+        public async Task<ActionResult<ResultadoOperaciones>> PostRetiro([FromBody] TransaccionesDTO transaccionesDTO)
         {
-
-            
-            var nuevaTransaccion = new Transaccione()
+            try
             {
-                IdTipoTransaccion = IdTipo,
-                Fecha = transaccionesDTO.Fecha,
-                Monto = transaccionesDTO.Monto,
-                IdCuenta = transaccionesDTO.IdCuenta
-  
-        };
+                var result = new ResultadoOperaciones();
+                var nuevaTransaccion = new Transaccione();
 
+                nuevaTransaccion.IdTipoTransaccion = 2;
+                nuevaTransaccion.Fecha = transaccionesDTO.Fecha;
+                nuevaTransaccion.Monto = transaccionesDTO.Monto;
+                nuevaTransaccion.IdCuenta = transaccionesDTO.IdCuenta;
 
-            await _context.Transacciones.AddAsync(nuevaTransaccion);
-            await _context.SaveChangesAsync();
+                if (nuevaTransaccion.IdTipoTransaccion.Equals(0) || nuevaTransaccion.Fecha.Equals(0) || nuevaTransaccion.Monto.Equals(0) || nuevaTransaccion.IdCuenta.Equals(0))
+                {
+                    result.SetError("Transaccion no resgistrada");
+                    result.StatusCode = 500;
+                    return Ok(result);
+                }
+                else
+                {
+                    await _context.Transacciones.AddAsync(nuevaTransaccion);
+                    await _context.SaveChangesAsync();
 
-            return Ok();
+                    result.IdCuenta = nuevaTransaccion.IdCuenta;
+                    result.IdTipoTransaccion = nuevaTransaccion.IdTipoTransaccion;
+                    result.Monto = nuevaTransaccion.Monto;
+                    result.StatusCode = 200;
+                    return Ok(result);
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Error al registrar transaccion");
+            }
 
         }
 
+
         //POST agregar deposito
         [HttpPost]
-        [Route("/agregarTransaccion/deposito/{IdTipo}")]
-        public async Task<ActionResult> PostDeposito([FromBody] TransaccionesDTO transaccionesDTO, int IdTipo = 3)
+        [Route("/agregarTransaccion/deposito")]
+        public async Task<ActionResult<ResultadoOperaciones>> PostDeposito([FromBody] TransaccionesDTO transaccionesDTO)
         {
-
-
-            var nuevaTransaccion = new Transaccione()
+            try
             {
-                IdTipoTransaccion = IdTipo,
-                Fecha = transaccionesDTO.Fecha,
-                Monto = transaccionesDTO.Monto,
-                IdCuenta = transaccionesDTO.IdCuenta
+                var result = new ResultadoOperaciones();
+                var nuevaTransaccion = new Transaccione();
 
-            };
+                nuevaTransaccion.IdTipoTransaccion = 3;
+                nuevaTransaccion.Fecha = transaccionesDTO.Fecha;
+                nuevaTransaccion.Monto = transaccionesDTO.Monto;
+                nuevaTransaccion.IdCuenta = transaccionesDTO.IdCuenta;
 
+                if (nuevaTransaccion.IdTipoTransaccion.Equals(0) || nuevaTransaccion.Fecha.Equals(0) || nuevaTransaccion.Monto.Equals(0) || nuevaTransaccion.IdCuenta.Equals(0))
+                {
+                    result.SetError("Transaccion no resgistrada");
+                    result.StatusCode = 500;
+                    return Ok(result);
+                }
+                else
+                {
+                    await _context.Transacciones.AddAsync(nuevaTransaccion);
+                    await _context.SaveChangesAsync();
 
-            await _context.Transacciones.AddAsync(nuevaTransaccion);
-            await _context.SaveChangesAsync();
-
-            return Ok();
+                    result.IdCuenta = nuevaTransaccion.IdCuenta;
+                    result.IdTipoTransaccion = nuevaTransaccion.IdTipoTransaccion;
+                    result.Monto = nuevaTransaccion.Monto;
+                    result.StatusCode = 200;
+                    return Ok(result);
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Error al registrar transaccion");
+            }
 
         }
 

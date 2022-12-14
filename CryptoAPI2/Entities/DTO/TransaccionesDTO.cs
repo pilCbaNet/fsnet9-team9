@@ -8,7 +8,7 @@ namespace Entities.DTO
 {
     public class TransaccionesDTO
     {
-        //public int IdTipoTransaccion { get; set; }
+        public int IdTipoTransaccion { get; set; }
         public DateTime Fecha { get; set; }
         public double Monto { get; set; }
         public int IdCuenta { get; set; }

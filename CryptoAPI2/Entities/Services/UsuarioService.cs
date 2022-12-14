@@ -64,7 +64,6 @@ namespace Entities.Services
             resultado.StatusCode = (int)HttpStatusCode.OK;
             return resultado;
 
-
         }
     
     }

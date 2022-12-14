@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lauma\\OneDrive\\Documentos\\PIL 2022\\BilleteraVirtual\\Proyecto PIL2022\\fsnet9-team9\\CryptoAPI2\\CryptoAPI2\\CryptoAPI2.csproj": {}
+    "C:\\Users\\Administrador\\Documents\\GitHub\\fsnet9-team9\\CryptoAPI2\\CryptoAPI2\\CryptoAPI2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lauma\\OneDrive\\Documentos\\PIL 2022\\BilleteraVirtual\\Proyecto PIL2022\\fsnet9-team9\\CryptoAPI2\\CryptoAPI2\\CryptoAPI2.csproj": {
+    "C:\\Users\\Administrador\\Documents\\GitHub\\fsnet9-team9\\CryptoAPI2\\CryptoAPI2\\CryptoAPI2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lauma\\OneDrive\\Documentos\\PIL 2022\\BilleteraVirtual\\Proyecto PIL2022\\fsnet9-team9\\CryptoAPI2\\CryptoAPI2\\CryptoAPI2.csproj",
+        "projectUniqueName": "C:\\Users\\Administrador\\Documents\\GitHub\\fsnet9-team9\\CryptoAPI2\\CryptoAPI2\\CryptoAPI2.csproj",
         "projectName": "CryptoAPI2",
-        "projectPath": "C:\\Users\\Lauma\\OneDrive\\Documentos\\PIL 2022\\BilleteraVirtual\\Proyecto PIL2022\\fsnet9-team9\\CryptoAPI2\\CryptoAPI2\\CryptoAPI2.csproj",
-        "packagesPath": "C:\\Users\\Lauma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lauma\\OneDrive\\Documentos\\PIL 2022\\BilleteraVirtual\\Proyecto PIL2022\\fsnet9-team9\\CryptoAPI2\\CryptoAPI2\\obj\\",
+        "projectPath": "C:\\Users\\Administrador\\Documents\\GitHub\\fsnet9-team9\\CryptoAPI2\\CryptoAPI2\\CryptoAPI2.csproj",
+        "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrador\\Documents\\GitHub\\fsnet9-team9\\CryptoAPI2\\CryptoAPI2\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Lauma\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Lauma\\OneDrive\\Documentos\\PIL 2022\\BilleteraVirtual\\Proyecto PIL2022\\fsnet9-team9\\CryptoAPI2\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Lauma\\OneDrive\\Documentos\\PIL 2022\\BilleteraVirtual\\Proyecto PIL2022\\fsnet9-team9\\CryptoAPI2\\Entities\\Entities.csproj"
+              "C:\\Users\\Administrador\\Documents\\GitHub\\fsnet9-team9\\CryptoAPI2\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Administrador\\Documents\\GitHub\\fsnet9-team9\\CryptoAPI2\\Entities\\Entities.csproj"
               }
             }
           }
@@ -69,8 +65,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -82,25 +77,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Lauma\\OneDrive\\Documentos\\PIL 2022\\BilleteraVirtual\\Proyecto PIL2022\\fsnet9-team9\\CryptoAPI2\\Entities\\Entities.csproj": {
+    "C:\\Users\\Administrador\\Documents\\GitHub\\fsnet9-team9\\CryptoAPI2\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lauma\\OneDrive\\Documentos\\PIL 2022\\BilleteraVirtual\\Proyecto PIL2022\\fsnet9-team9\\CryptoAPI2\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Administrador\\Documents\\GitHub\\fsnet9-team9\\CryptoAPI2\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\Lauma\\OneDrive\\Documentos\\PIL 2022\\BilleteraVirtual\\Proyecto PIL2022\\fsnet9-team9\\CryptoAPI2\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\Lauma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lauma\\OneDrive\\Documentos\\PIL 2022\\BilleteraVirtual\\Proyecto PIL2022\\fsnet9-team9\\CryptoAPI2\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\Administrador\\Documents\\GitHub\\fsnet9-team9\\CryptoAPI2\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrador\\Documents\\GitHub\\fsnet9-team9\\CryptoAPI2\\Entities\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Lauma\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -141,8 +132,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -151,7 +141,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

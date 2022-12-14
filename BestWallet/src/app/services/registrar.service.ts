@@ -14,4 +14,9 @@ export class RegistrarService {
     {
       return this.http.post('http://localhost:3000/usuarios',registro);
     }
+  
+  crearCuenta():Observable<any>{
+    return this.http.post()
+  }
+
 }
