@@ -18,7 +18,8 @@ export class RegistrarService {
     }
   
   crearCuenta():Observable<any>{
-    return this.http.post()
+    let registro;
+    return this.http.post(this.url, registro);
   }
 
 }

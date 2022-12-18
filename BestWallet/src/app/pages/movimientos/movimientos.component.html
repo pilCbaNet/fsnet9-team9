@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" style="width: 800px;">
     <div class="row">
         <div class="col">
             <section class="bg-dark p-4 my-4 rounded">
@@ -16,7 +16,7 @@
             </section>
         </div>
     </div>
-    <div class="row">
+    <div class="bg-dark">
         <div class="col-12">
             <h1 class="lead">Últimos Movimientos
             </h1>
@@ -25,24 +25,24 @@
     <p id="Ultimos-movimientos-subtitle"></p>
 
     <table class="table table-hover bg-white" id="tabla-movimientos">
-        <thead>
+        <thead align="center">
             <tr>
-                <th scope="col">#</th>
-                <th scope="col">Fecha</th>
-                <th scope="col">Tipo de transaccion</th>
+                <!-- <th scope="col">#</th> -->
+                <th scope="col">Fecha y Hora</th>
+                <th scope="col">Tipo de transacción</th>
                 <th scope="col">Monto</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody align="center">
             <tr *ngFor="let item of movimientos">
-                <th scope="row">{{item.idTransaccion}}</th>
-                <td>{{item.fecha}}</td>
-                <td>{{item.idTipoTransaccion}}</td>
-                <td>{{item.monto}}</td>
+                <!-- <th scope="row">{{item.idTransaccion}}</th> -->
+                <td>{{item.fecha | date:'d/M/yy, HH:mm:ss'}}</td>
+                <td>{{item.idTipoTransaccion | tipoTransaccion}}</td>
+                <td [ngStyle]="{'color':item.idTipoTransaccion==2?'red':'green'}">{{item.monto | currency:'ARS':'symbol-narrow'}}</td>
             </tr>
         </tbody>
     </table>
 
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

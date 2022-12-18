@@ -1,14 +1,21 @@
-.container{
-    margin-top: 2cm;
+.container {
+    margin-top: 1px;
     font-family: 'Roboto', sans-serif;
-    height: 100vh;
+    /* height: 100vh; */
 }
-#Ultimos-movimientos-subtitle{
+
+#Ultimos-movimientos-subtitle {
     color: black;
 }
-.balance{
+
+.balance {
     text-align: end;
 }
-.col{
+
+.col {
     margin-top: 2ex;
+}
+
+table {
+    table-layout: fixed;
 }

@@ -16,6 +16,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { LoguearseComponent } from './pages/loguearse/loguearse.component';
 import { DepositoComponent } from './pages/deposito/deposito.component';
 import { RetiroComponent } from './pages/retiro/retiro.component';
+import { TipoTransaccionPipe } from './pipes/tipo-transaccion.pipe';
 
 const Routes: Routes = [
   { path: 'loguearse', component: LoguearseComponent },
@@ -34,6 +35,7 @@ const Routes: Routes = [
     LoguearseComponent,
     DepositoComponent,
     RetiroComponent,
+    TipoTransaccionPipe,
 
   ],
   imports: [
